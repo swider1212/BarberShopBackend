@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "68195018-e27f-4e3e-87b9-7ec4376d0568",
+		"name": "InsaneScissors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20656934"
+	},
+	"item": [
+		{
+			"name": "(local) Create Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"email\": \"kamiltumulec@tylkolegia.pl\",\r\n    \"firstName\": \"kamil\",\r\n    \"lastName\": \"tumulec\",\r\n    \"is_admin\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(local) Get Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(local) Get Client by Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/clients/emails/kamiltumulec@tylkolegia.pl",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"emails",
+						"kamiltumulec@tylkolegia.pl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(local) Get Service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/services/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"services",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(local) Get All Services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/services",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(local) Get Barbershop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/barbershops/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"barbershops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(local) Get All Barbershops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/barbershops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"barbershops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(remote) Create Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"email\": \"kamiltumulec@tylkolegia.pl\",\r\n    \"firstName\": \"kamil\",\r\n    \"lastName\": \"tumulec\",\r\n    \"is_admin\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://insancescissorswebapp.azurewebsites.net/clients/create",
+					"protocol": "https",
+					"host": [
+						"insancescissorswebapp",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"clients",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(remote) Get Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://insancescissorswebapp.azurewebsites.net/clients/1",
+					"protocol": "https",
+					"host": [
+						"insancescissorswebapp",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"clients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(remote) Get Client by Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://insancescissorswebapp.azurewebsites.net/clients/emails/kamiltumulec@tylkolegia.pl",
+					"protocol": "https",
+					"host": [
+						"insancescissorswebapp",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"clients",
+						"emails",
+						"kamiltumulec@tylkolegia.pl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(remote) Get Service",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/services/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"services",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(remote) Get All Services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://insancescissorswebapp.azurewebsites.net/services",
+					"protocol": "https",
+					"host": [
+						"insancescissorswebapp",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"services"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(remote) Get Barbershop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://insancescissorswebapp.azurewebsites.net/barbershops/1",
+					"protocol": "https",
+					"host": [
+						"insancescissorswebapp",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"barbershops",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(remote) Get All Barbershops",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/barbershops",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"barbershops"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
